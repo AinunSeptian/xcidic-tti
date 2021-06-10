@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import burgerNav from "../assets/images/burger-nav.png";
-import languageNavBurger from "../assets/images/lang-nav-burger.png";
+import classes from "../components/Header/header.module.css";
+import BurgerNavIcon from "../assets/img/burger-nav-icon.png";
+import languageNavBurger from "../assets/img/lang-nav-burger-icon.png";
 
 const BurgerNav = () => {
   const [show, setShow] = useState(false);
@@ -14,9 +15,9 @@ const BurgerNav = () => {
     <div className="container-nav-burger">
       {!show ? (
         <img
-          src={burgerNav}
+          src={BurgerNavIcon}
           alt=""
-          className="burger-nav"
+          className={classes.burgerNav1}
           onClick={showBurgerNav}
         />
       ) : (
@@ -24,26 +25,30 @@ const BurgerNav = () => {
       )}
 
       {show ? (
-        <div className="wrapper-nav-burger">
-          <div className="container-text-burger">
-            <p className="close-nav-burger" onClick={dontShowBurgerNav}>
+        <div className={classes.wrapperNavBurger}>
+          <div className={classes.containerTextBurger}>
+            <p className={classes.closeNavBurger} onClick={dontShowBurgerNav}>
               x
             </p>
-            <p className="text-language-burger">
-              <img src={languageNavBurger} alt="" className="img-nav-burger" />
+            <p className={classes.textLanguageBurger}>
+              <img
+                src={languageNavBurger}
+                alt=""
+                className={classes.imgNavBurger}
+              />
               US/EN
             </p>
           </div>
-          <div className="container-text2-burger">
-            <p className="text3-burger-nav">Login/SignUp</p>
-            <p className="text2-burger-nav">Home</p>
-            <p className="text2-burger-nav">About</p>
-            <p className="text2-burger-nav">Trade</p>
-            <p className="text2-burger-nav">Invesment</p>
-            <p className="text2-burger-nav">Tourism</p>
-            <p className="text2-burger-nav">Regional Cluster</p>
-            <p className="text2-burger-nav">News & Publications</p>
-            <p className="text2-burger-nav">FAQs</p>
+          <div className={classes.containerText2Burger}>
+            <p className={classes.text3BurgerNav}>Login/SignUp</p>
+            <p className={classes.text2BurgerNav}>Home</p>
+            <p className={classes.text2BurgerNav}>About</p>
+            <p className={classes.text2BurgerNav}>Trade</p>
+            <p className={classes.text2BurgerNav}>Invesment</p>
+            <p className={classes.text2BurgerNav}>Tourism</p>
+            <p className={classes.text2BurgerNav}>Regional Cluster</p>
+            <p className={classes.text2BurgerNav}>News & Publications</p>
+            <p className={classes.text2BurgerNav}>FAQs</p>
           </div>
         </div>
       ) : (
