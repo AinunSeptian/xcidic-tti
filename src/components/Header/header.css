@@ -16,8 +16,19 @@
   border-bottom-right-radius: 40px;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
 }
-.img-logo {
-  margin: 35px 25px 35px 26px;
+.text-logo {
+  margin: 30px 25px 35px 26px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 50px;
+  font-style: italic;
+  color: #0a5379;
+  font-weight: 600;
+  position: relative;
+}
+
+.titik-logo {
+  color: #ed901a;
+  position: absolute;
 }
 /* .text-logo {
   font-size: 56px;
@@ -79,4 +90,93 @@
   font-size: 14px;
   line-height: 18px;
   color: white;
+}
+
+@media only screen and (max-width: 414px) {
+  .wrapper-header {
+    width: 414px;
+    height: 98px;
+    /* background-color: gray; */
+    border-bottom: 1px solid #eee;
+  }
+  .wrapper-logo {
+    margin-left: 0px;
+    width: 0px;
+    height: 0px;
+    /* border: 1px solid black; */
+    margin-top: 0px;
+  }
+  .text-logo {
+    width: 89px;
+    height: 70px;
+    position: absolute;
+    margin: 14px 0 14px 16px;
+  }
+  .burger-nav {
+    position: absolute;
+    left: 364px;
+    right: 22px;
+    top: 41px;
+    bottom: 41px;
+  }
+  .wrapper-nav-burger {
+    width: 270px;
+    height: 896px;
+    background-color: #ffffff;
+    margin-left: 144px;
+    top: 0px;
+    z-index: 3;
+  }
+  .close-nav-burger {
+    position: absolute;
+    left: 10px;
+    right: 22px;
+    top: -25px;
+    bottom: 0px;
+    font-size: 25px;
+    color: gray;
+    font-family: "Source Sans Pro", sans-serif;
+  }
+  .container-text-burger {
+    position: absolute;
+    width: 270px;
+    height: 98px;
+    left: 144px;
+    top: -0;
+    background: #ffffff;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.16);
+  }
+  .img-nav-burger {
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+  }
+  .text-language-burger {
+    margin: 50px 0 31px 25px;
+  }
+  .container-text2-burger {
+    /* position: absolute; */
+    padding-top: 14px;
+    margin-top: 90px;
+    box-shadow: -5px 0 5px -5px rgba(0, 0, 0, 0.16);
+  }
+
+  .text3-burger-nav {
+    font-family: "Source Sans Pro";
+    font-weight: bold;
+    font-size: 16px;
+
+    letter-spacing: 0.02em;
+    margin: 16px 0 33px 24px;
+  }
+  .text2-burger-nav {
+    margin: 0 0 33px 24px;
+    font-family: "Source Sans Pro";
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+  }
+  .text2-burger-nav .text3-burger-nav:hover {
+    color: #ed901a;
+  }
 }
