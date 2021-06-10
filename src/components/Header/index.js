@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./header.css";
 import BurgerNav from "../../elements/BurgerNav";
+x;
 import NavVector1 from "../../assets/images/nav-vector-1.png";
 import NavVector2 from "../../assets/images/nav-vector.png";
 

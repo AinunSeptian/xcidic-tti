@@ -1,13 +1,19 @@
-.wrapper-header {
-  width: 1440px;
+.header {
+  z-index: 2147483646;
+  position: fixed;
+  top: 0;
+  width: 100%;
   height: 100px;
-  position: absolute;
-  /* background-color: gray; */
-  /* box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25); */
+  background-color: white;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
 
-.wrapper-logo {
-  margin-left: 36px;
+.header .nav {
   position: absolute;
   width: 140px;
   height: 140px;
@@ -16,7 +22,7 @@
   border-bottom-right-radius: 40px;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
 }
-.text-logo {
+.textlogo {
   margin: 30px 25px 35px 26px;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 50px;
@@ -26,7 +32,7 @@
   position: relative;
 }
 
-.titik-logo {
+.titiklogo {
   color: #ed901a;
   position: absolute;
 }
@@ -48,37 +54,40 @@
   text-align: center;
   margin-right: 11px;
 }
-
-.img-nav-vector-1 {
-  height: 4px;
-  width: 8px;
-  /* margin-left: 3px; */
-}
-.nav-text {
+.header .nav a {
   text-decoration: none;
   font-size: 14px;
-  color: black;
-  font-family: "Source Sans Pro", sans-serif;
+  color: #282828;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
-  margin: 0px 50px 41px 0;
+  margin: 0px 51px 41px 0;
 }
-.nav-text:hover {
-  font-weight: 600;
+.header .nav a:hover {
   border-bottom: 2px solid #ed901a;
   color: #0a5379;
 }
 
-.nav-text-vector {
+.header .nav-text-vector {
   width: 120px;
   text-decoration: none;
   font-size: 14px;
   color: black;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
   margin: 0px 34px 41px 0;
 }
 
-.btn-nav {
+.header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header li {
+  display: inline;
+}
+
+.header li .button {
   width: 120px;
   height: 40px;
   border: none;
@@ -179,4 +188,31 @@
   .text2-burger-nav .text3-burger-nav:hover {
     color: #ed901a;
   }
+.header .logo {
+  z-index: 2147483647;
+  left: 0;
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  background-color: white;
+  margin: 106px 0px 0px 36px;
+  border-bottom-right-radius: 40px;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
+}
+
+.header .logo .image {
+  margin: 55px 25px 35px 23px;
+}
+
+.img-nav-vector-2 {
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  margin-right: 11px;
+}
+
+.img-nav-vector-1 {
+  height: 4px;
+  width: 8px;
+  /* margin-left: 3px; */
 }
