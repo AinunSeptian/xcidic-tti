@@ -12,17 +12,31 @@
   padding: 0 10%;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
+.textlogo {
+  margin: 30px 25px 35px 26px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 50px;
+  font-style: italic;
+  color: #0a5379;
+  font-weight: 600;
+  position: relative;
+}
+
+.titik {
+  color: #ed901a;
+  position: absolute;
+}
 
 .header .nav {
   position: absolute;
-  margin: 30px 360px 30px 0;
-  right: 0;
+  margin: 30px 0px 30px 0;
+  right: 300px;
 }
 .header .nav a {
   text-decoration: none;
   font-size: 14px;
   color: #282828;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 400;
   margin: 0px 51px 41px 0;
 }
@@ -36,7 +50,7 @@
   text-decoration: none;
   font-size: 14px;
   color: black;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 400;
   margin: 0px 34px 41px 0;
 }
@@ -92,4 +106,100 @@
   height: 4px;
   width: 8px;
   /* margin-left: 3px; */
+}
+
+@media only screen and (max-width: 414px) {
+  .header {
+    width: 414px;
+    height: 98px;
+    /* background-color: gray; */
+    border-bottom: 1px solid #eee;
+  }
+  .logo {
+    margin: 0;
+    width: 0;
+    height: 0;
+  }
+  .header .logo {
+    margin-left: 0px;
+    top: 0;
+    width: 0px;
+    height: 0px;
+    /* border: 1px solid black; */
+    margin-top: 0px;
+  }
+  .textlogo {
+    width: 89px;
+    height: 70px;
+    position: absolute;
+    margin: 14px 0 14px 16px;
+  }
+  .burgerNav1 {
+    position: absolute;
+    left: 364px;
+    right: 22px;
+    top: 41px;
+    bottom: 41px;
+  }
+  .wrapperNavBurger {
+    width: 270px;
+    height: 896px;
+    background-color: gray;
+    margin-left: 100px;
+    top: 0px;
+    z-index: 3;
+  }
+  .closeNavBurger {
+    position: absolute;
+    left: 10px;
+    right: 22px;
+    top: -25px;
+    bottom: 0px;
+    font-size: 25px;
+    color: gray;
+    font-family: "Source Sans Pro", sans-serif;
+  }
+  .containerTextBurger {
+    position: absolute;
+    width: 270px;
+    height: 98px;
+    left: 144px;
+    top: -0;
+    background: #ffffff;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.16);
+  }
+  .imgNavBurger {
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+  }
+  .textLanguageBurger {
+    margin: 50px 0 31px 25px;
+  }
+  .container-text2-burger {
+    /* position: absolute; */
+    padding-top: 14px;
+    margin-top: 90px;
+    box-shadow: -5px 0 5px -5px rgba(0, 0, 0, 0.16);
+  }
+
+  .text3BurgerNav {
+    font-family: "Source Sans Pro";
+    font-weight: bold;
+    font-size: 16px;
+    color: red;
+    letter-spacing: 0.02em;
+    margin: 16px 0 33px 24px;
+  }
+  .text2BurgerNav {
+    margin: 0 0 33px 24px;
+    font-family: "Source Sans Pro";
+    font-weight: bold;
+    color: red;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+  }
+  .text2BurgerNav .text3BurgerNav:hover {
+    color: #ed901a;
+  }
 }
