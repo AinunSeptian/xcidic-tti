@@ -7,7 +7,7 @@ import BurgerNav from "../../elements/NavBar/BurgerNav";
 
 const Header = () => {
   const [width, setWidth] = useState(window.innerWidth);
-  const breakPoint = 769;
+  const breakPoint = 481;
   useEffect(() => {
     const handleWindowsResize = () => setWidth(window.innerWidth);
     window.addEventListener("resize", handleWindowsResize);
