@@ -105,15 +105,17 @@
 .img-nav-vector-1 {
   height: 4px;
   width: 8px;
-  /* margin-left: 3px; */
 }
 
-@media only screen and (max-width: 414px) {
+/* for Smartphone Keep Impruving */
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
   .header {
-    width: 414px;
+    width: 100%;
     height: 98px;
-    /* background-color: gray; */
     border-bottom: 1px solid #eee;
+    display: flex;
+    justify-self: start;
   }
   .logo {
     margin: 0;
@@ -125,7 +127,6 @@
     top: 0;
     width: 0px;
     height: 0px;
-    /* border: 1px solid black; */
     margin-top: 0px;
   }
   .textlogo {
@@ -140,33 +141,35 @@
     right: 22px;
     top: 41px;
     bottom: 41px;
+    display: flex;
+    justify-content: flex-end;
   }
   .wrapperNavBurger {
+    position: absolute;
     width: 270px;
-    height: 896px;
-    background-color: gray;
+    height: 60%;
     margin-left: 100px;
-    top: 0px;
     z-index: 3;
   }
   .closeNavBurger {
     position: absolute;
-    left: 10px;
-    right: 22px;
-    top: -25px;
-    bottom: 0px;
+    margin: 0 0 0 10px;
     font-size: 25px;
     color: gray;
     font-family: "Source Sans Pro", sans-serif;
   }
+
   .containerTextBurger {
-    position: absolute;
     width: 270px;
     height: 98px;
-    left: 144px;
-    top: -0;
-    background: #ffffff;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.16);
+    margin-top: -100px;
+    box-shadow: -5px 0 5px -5px rgba(0, 0, 0, 0.16);
+  }
+  .containerText2Burger {
+    position: absolute;
+    padding-top: 14px;
+    z-index: 3;
+    box-shadow: -5px 0 5px -5px rgba(0, 0, 0, 0.16);
   }
   .imgNavBurger {
     width: 16px;
@@ -175,31 +178,35 @@
   }
   .textLanguageBurger {
     margin: 50px 0 31px 25px;
-  }
-  .container-text2-burger {
-    /* position: absolute; */
-    padding-top: 14px;
-    margin-top: 90px;
-    box-shadow: -5px 0 5px -5px rgba(0, 0, 0, 0.16);
+    color: #0a5379;
+    font-size: 14px;
+    padding-top: 50px;
+    font-weight: 600;
   }
 
   .text3BurgerNav {
     font-family: "Source Sans Pro";
     font-weight: bold;
     font-size: 16px;
-    color: red;
+    color: #282828;
     letter-spacing: 0.02em;
-    margin: 16px 0 33px 24px;
+    text-align: center;
+    margin: 16px 0 16px 24px;
   }
   .text2BurgerNav {
-    margin: 0 0 33px 24px;
+    margin: 16px 0 16px 24px;
     font-family: "Source Sans Pro";
     font-weight: bold;
-    color: red;
+    color: #282828;
     font-size: 16px;
     letter-spacing: 0.02em;
+    text-align: center;
   }
-  .text2BurgerNav .text3BurgerNav:hover {
+  .wrapperSideNav {
+    /* margin-top: 2px; */
+    border-bottom: 1px solid #f3f1f1;
+  }
+  .text2BurgerNav .text3BurgerNav:active {
     color: #ed901a;
   }
 }

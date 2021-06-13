@@ -3,11 +3,11 @@ import classes from "./header.module.css";
 import NavVector1 from "../../assets/img/nav-vector-1.png";
 import NavVector2 from "../../assets/img/nav-vector.png";
 import logoNavbar from "../../assets/img/vector-navbar-tti.png";
-import BurgerNav from "../../elements/BurgerNav";
+import BurgerNav from "../../elements/NavBar/BurgerNav";
 
 const Header = () => {
   const [width, setWidth] = useState(window.innerWidth);
-  const breakPoint = 415;
+  const breakPoint = 769;
   useEffect(() => {
     const handleWindowsResize = () => setWidth(window.innerWidth);
     window.addEventListener("resize", handleWindowsResize);
