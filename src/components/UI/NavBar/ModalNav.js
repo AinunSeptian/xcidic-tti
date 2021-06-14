@@ -1,7 +1,7 @@
 import classes from "*.module.css";
 import React, { useState } from "react";
 
-export default function modalNav(props) {
+export default function ModalNav(props) {
   const [showModal, setShowModal] = useState(false);
   const handleShowModal = () => {
     setShowModal(true);
