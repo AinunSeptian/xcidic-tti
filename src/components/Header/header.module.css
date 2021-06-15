@@ -1,5 +1,5 @@
 .header {
-  z-index: 2147483646;
+  z-index: 2147483644;
   position: fixed;
   top: 0;
   width: 100%;
@@ -9,7 +9,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10%;
+  padding: 0 0;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
 .textlogo {
@@ -23,14 +23,15 @@
 }
 
 .titik {
-  color: #ed901a;
+  color: #d91023;
   position: absolute;
 }
 
 .header .nav {
   position: absolute;
-  margin: 30px 0px 30px 0;
-  right: 300px;
+  /* float:right; */
+  /* margin: 30px 0px 30px 0; */
+  right: 30px;
 }
 .header .nav a {
   text-decoration: none;
@@ -41,7 +42,7 @@
   margin: 0px 51px 41px 0;
 }
 .header .nav a:hover {
-  border-bottom: 2px solid #ed901a;
+  border-bottom: 2px solid #d91023;
   color: #0a5379;
 }
 
@@ -79,8 +80,8 @@
   color: white;
 }
 
-.header .logo {
-  z-index: 2147483647;
+/* .header .logo {
+  z-index: 2147483645;
   left: 0;
   position: absolute;
   width: 140px;
@@ -89,10 +90,10 @@
   margin: 106px 0px 0px 36px;
   border-bottom-right-radius: 40px;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
-}
+} */
 
 .header .logo .image {
-  margin: 55px 25px 35px 23px;
+  margin: 50px 20px;
 }
 
 .img-nav-vector-2 {
@@ -100,112 +101,48 @@
   height: 16px;
   text-align: center;
   margin-right: 11px;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-0%, 18%);
 }
 
 .img-nav-vector-1 {
   height: 4px;
   width: 8px;
+  padding-left: 5px;
 }
 
-/* for Smartphone Keep Impruving */
+/* Nav Menu */
 
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+/* for Smartphone Keep Improving */
+@media only screen and (max-width: 1281px) {
+  .nav {
+    display: none;
+  }
+
   .header {
     width: 100%;
-    height: 98px;
+    height: 100px;
     border-bottom: 1px solid #eee;
     display: flex;
     justify-self: start;
   }
-  .logo {
+  /* .logo {
     margin: 0;
     width: 0;
     height: 0;
-  }
+  } */
   .header .logo {
-    margin-left: 0px;
-    top: 0;
-    width: 0px;
-    height: 0px;
-    margin-top: 0px;
+    margin: 50px 20px;
+    z-index: 1;
   }
   .textlogo {
-    width: 89px;
+    /* width: 89px;
     height: 70px;
-    position: absolute;
-    margin: 14px 0 14px 16px;
-  }
-  .burgerNav1 {
-    position: absolute;
-    left: 364px;
-    right: 22px;
-    top: 41px;
-    bottom: 41px;
-    display: flex;
-    justify-content: flex-end;
-  }
-  .wrapperNavBurger {
-    position: absolute;
-    width: 270px;
-    height: 60%;
-    margin-left: 100px;
-    z-index: 3;
-  }
-  .closeNavBurger {
-    position: absolute;
-    margin: 0 0 0 10px;
-    font-size: 25px;
-    color: gray;
-    font-family: "Source Sans Pro", sans-serif;
-  }
-
-  .containerTextBurger {
-    width: 270px;
-    height: 98px;
-    margin-top: -100px;
-    box-shadow: -5px 0 5px -5px rgba(0, 0, 0, 0.16);
-  }
-  .containerText2Burger {
-    position: absolute;
-    padding-top: 14px;
-    z-index: 3;
-    box-shadow: -5px 0 5px -5px rgba(0, 0, 0, 0.16);
-  }
-  .imgNavBurger {
-    width: 16px;
-    height: 16px;
-    margin-right: 6px;
-  }
-  .textLanguageBurger {
-    margin: 50px 0 31px 25px;
-    color: #0a5379;
-    font-size: 14px;
-    padding-top: 50px;
-    font-weight: 600;
-  }
-
-  .text3BurgerNav {
-    font-family: "Source Sans Pro";
-    font-weight: bold;
-    font-size: 16px;
-    color: #282828;
-    letter-spacing: 0.02em;
-    text-align: center;
-    margin: 16px 0 16px 24px;
-  }
-  .text2BurgerNav {
-    margin: 16px 0 16px 24px;
-    font-family: "Source Sans Pro";
-    font-weight: bold;
-    color: #282828;
-    font-size: 16px;
-    letter-spacing: 0.02em;
-    text-align: center;
-  }
-  .wrapperSideNav {
-    border-bottom: 1px solid #f3f1f1;
-  }
-  .text2BurgerNav .text3BurgerNav:active {
-    color: #ed901a;
+    position: absolute; */
+    margin: 14px 0px;
   }
 }
+
+/* @media only screen and (min-width: 320px) and (max-width: 480px) {
+  
+} */
