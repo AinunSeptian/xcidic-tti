@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import classes from "./header.module.css";
 import NavVector1 from "../../assets/img/nav-vector-1.png";
 import NavVector2 from "../../assets/img/nav-vector.png";
-import logoNavbar from "../../assets/img/vector-navbar-tti.png";
 import BurgerNav from "../../elements/NavBar/BurgerNav";
 
 const Header = () => {
