@@ -2,9 +2,15 @@
   z-index: 2147483644;
   position: fixed;
   /* top: 0; */
-  width: 1440px;
+  width: 100%;
   height: 100px;
-  background-color: white;
+
+  background-color: rgb(10, 83, 121, 0.2);
+
+  /* background-color: #0a5379; */
+  /* mix-blend-mode: multiply; */
+  /* opacity: 0.3; */
+
   color: white;
   display: flex;
   justify-content: space-between;
@@ -29,7 +35,9 @@
 }
 
 .header .nav {
-  /* position: absolute; */
+  position: relative;
+  right: 0px;
+  /* top: 16px;  */
   /* float:right; */
   /* margin: 30px 0px 30px 0; */
   max-width: 1345px;
@@ -49,8 +57,8 @@
 /* .header .nav a:link, */
 .header .nav a:visited,
 .header .nav a:active {
-  border-bottom: 2px solid #d91023;
-  color: #0a5379;
+  border-bottom: 2px solid #ed901a;
+  color: white;
 }
 
 /* .header .nav .active {

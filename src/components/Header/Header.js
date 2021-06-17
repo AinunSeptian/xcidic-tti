@@ -1,23 +1,43 @@
-import React, { useState } from 'react';
-import classes from './Header.module.css';
-import NavVector1 from '../../assets/img/nav-vector-1.png';
-import NavVector2 from '../../assets/img/nav-vector.png';
-import MenuNav from './MenuNav/MenuNav';
-import Dropdown from '../UI/NavBar/DropDown';
-
+import classes from "./Header.module.css";
+import NavVector1 from "../../assets/img/nav-vector-1.png";
+import NavVector2 from "../../assets/img/nav-vector.png";
+import MenuNav from "./MenuNav/MenuNav";
+import Dropdown from "../UI/NavBar/DropDown";
+import { useState, useRef } from "react";
+import useOnClickOutside from "../../hooks/useOnClickOutside";
 
 const Header = () => {
-  // const [activeLink, setActiveLink] = useState('test');
-  
-  
+  const [isModalOpen, setModalOpen] = useState(false);
+  const modalRef = useRef();
+  useOnClickOutside(modalRef, () => setModalOpen(false));
   return (
     <header className={classes.header}>
+      {isModalOpen && (
+        <div
+          ref={modalRef}
+          style={{
+            width: "72%",
+            position: "absolute",
+            marginLeft: 0,
+            zIndex: 3,
+            top: 0,
+            height: 800,
+            backgroundColor: "rgba(0,0,0,0.5)",
+          }}
+        ></div>
+      )}
+
       <a className={classes.logo}>
         <p className={classes.textlogo}>
           TTI <span className={classes.titik}>.</span>
         </p>
       </a>
-      <MenuNav />
+
+      <MenuNav
+        isModalOpen={isModalOpen}
+        setModalOpen={setModalOpen}
+        modalRef={modalRef}
+      />
 
       <nav className={classes.nav}>
         <ul>

@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import classes from './DropDown.module.css';
-import asd from '../../../assets/img/nav-vector-1.png';
+import arrowDown from '../../../assets/img/nav-vector-1.png';
 export default function ModalNav(props) {
   return (
     <div className={classes.dropdown}>
       <button className={classes.dropbtn}>
         {props.title}
-        <img src={asd} alt='down arrow' className={classes['img-vector']} />
+        <img src={arrowDown} alt='down arrow' className='img-vector' />
       </button>
       <ul className={classes['dropdown-content']}>
         <li>
