@@ -1,0 +1,128 @@
+.productSection {
+  /* transform: translatex(55%); */
+  /* width: 677px; */
+  /* height:100px; */
+  padding-top: 150px;
+  /* justify-content: center; */
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.productSection h1 {
+  /* justify-content: center; */
+  /* Product showcase */
+
+  /* position: absolute; */
+  /* width: 288px; */
+  /* height: 40px; */
+  /* left: 576px;
+  top: 2873px; */
+
+  color: #282828;
+
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 40px;
+
+  /* Black */
+  margin-bottom: 7;
+}
+
+.productSection p {
+  max-width: 677px;
+  margin: 0 auto;
+
+  /* height: 66px; */
+  color: #282828;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  /* or 137% */
+
+  /* text-align: center; */
+
+  /* Black */
+}
+
+.productSection h3 {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+
+  /* Black */
+
+  color: #282828;
+  margin: 40px 0px 30px 0px;
+}
+
+.productItemWrapper {
+  display: inline-block;
+  width: 750px;
+
+  /* width: 50%;
+  margin: 0 auto; */
+  /* position:absolute; */
+  /* align-content: center; */
+  /* left: 50%; */
+  /* position: absolute; */
+  /* right: 50%; */
+  /* transform: translate(-50%, -50%); */
+}
+
+.productSection h4 {
+  /* position: absolute; */
+  display: block;
+  width: 130px;
+  padding-top: 0;
+  margin-top: 0;
+  /* top: 885px; */
+  /* left: 80px; */
+  /* float: right; */
+  font-family: 'Merriweather';
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  z-index: 99999999;
+  float: right;
+  margin-right: 70px;
+  /* background-color: rgba(255, 255, 0, 0.377); */
+  /* float:right; */
+  /* margin-left: 250px; */
+  color: #004e97;
+
+  /* margin-left: 170px; */
+}
+.productSection h4:hover {
+  cursor: pointer;
+  border-bottom: 2px solid #d91023;
+}
+
+.productWrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  list-style: none;
+
+  overflow: auto;
+  /* position: absolute; */
+  margin: 0px auto;
+
+  /* left: 50%; */
+  max-width: 660px;
+  height: 365px;
+
+  /* text-align: center; */
+}
+
+/* @media only screen and (max-width: 370px) {
+} */
