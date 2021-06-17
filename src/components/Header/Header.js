@@ -3,10 +3,13 @@ import classes from './Header.module.css';
 import NavVector1 from '../../assets/img/nav-vector-1.png';
 import NavVector2 from '../../assets/img/nav-vector.png';
 import MenuNav from './MenuNav/MenuNav';
+import Dropdown from '../UI/NavBar/DropDown';
+
 
 const Header = () => {
-  const [activeLink, setActiveLink] = useState('test');
-
+  // const [activeLink, setActiveLink] = useState('test');
+  
+  
   return (
     <header className={classes.header}>
       <a className={classes.logo}>
@@ -18,14 +21,8 @@ const Header = () => {
 
       <nav className={classes.nav}>
         <ul>
-          <li>s
-            <a
-              href='#'
-              onClick={() => setActiveLink("active")}
-              className={classes[activeLink]}
-            >
-              Home
-            </a>
+          <li>
+            <a href='#'>Home</a>
           </li>
           <li>
             <a href='#'>About</a>
@@ -40,24 +37,18 @@ const Header = () => {
             <a href='#'>Tourism</a>
           </li>
           <li>
-            <a href='#' className={classes['nav-text-vector']}>
-              Regional Cluster
-              <img
-                src={NavVector1}
-                alt='down arrow'
-                className={classes['img-nav-vector-1']}
-              />
-            </a>
+            <Dropdown title='Regional Cluster' />
           </li>
           <li>
-            <a href='#' className={classes['nav-text-vector']}>
+            {/* <a href="#" className={classes["nav-text-vector"]}>
               News & Publications
               <img
                 src={NavVector1}
-                alt='down arrow'
-                className={classes['img-nav-vector-1']}
+                alt="down arrow"
+                className={classes["img-nav-vector-1"]}
               />
-            </a>
+            </a> */}
+            <Dropdown title='News & Publications' />
           </li>
           <li>
             <a href='#'>FAQs</a>

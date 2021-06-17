@@ -1,4 +1,10 @@
 .productSection {
+  height: 1051px;
+  /* width: 1440px; */
+  /* left: 0px;
+  top: 2901px; */
+  /* border-radius: 0px; */
+
   /* transform: translatex(55%); */
   /* width: 677px; */
   /* height:100px; */
@@ -7,6 +13,21 @@
   text-align: center;
   align-items: center;
   justify-content: center;
+  /* position:absolute */
+}
+
+.productSection .timeline img {
+  margin-bottom: 16px;
+  /* position: relative; */
+  /* width: 120px; */
+  /* height: 0px;
+  left: 720px;
+  top: 2901px; */
+
+  /* Blue */
+  /*   
+  border: 1px solid #0A5379;
+  transform: rotate(90deg); */
 }
 
 .productSection h1 {
@@ -28,6 +49,7 @@
   line-height: 40px;
 
   /* Black */
+  margin-top: 16;
   margin-bottom: 7;
 }
 
@@ -124,5 +146,87 @@
   /* text-align: center; */
 }
 
-/* @media only screen and (max-width: 370px) {
-} */
+@media only screen and (max-width: 688px) {
+  .productSection {
+    height: 1051px;
+    /* width: 1440px; */
+    /* left: 0px;
+    top: 2901px; */
+    /* border-radius: 0px; */
+
+    /* transform: translatex(55%); */
+    /* width: 677px; */
+    /* height:100px; */
+    padding-top: 150px;
+    /* justify-content: center; */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    /* position:absolute */
+  }
+
+  .productSection .timeline img {
+    position: absolute;
+    width: 10px;
+    height: 80px;
+    left: 24px;
+    /* top: 3171px; */
+    margin-bottom: 0px;
+    /* position: relative; */
+    /* width: 120px; */
+    /* height: 0px;
+    left: 720px;
+    top: 2901px; */
+
+    /* Blue */
+    /*   
+    border: 1px solid #0A5379;
+    transform: rotate(90deg); */
+  }
+
+  .productSection h1 {
+    position: absolute;
+    width: 216px;
+    height: 30px;
+    left: 36px;
+    /* top: 3227px; */
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: #282828;
+    padding-top: 56px;
+  }
+
+  .productSection p {
+    position: relative;
+    width: 354px;
+    height: 100px;
+    margin: 0px;
+    left: 50px;
+    top: 95px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
+    color: #282828;
+  }
+
+  .productSection h3 {
+    position: absolute;
+    width: 183px;
+    height: 25px;
+    left: 36px;
+    /* top: 3409px; */
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    color: #282828;
+    margin-top: 100px;
+  }
+}

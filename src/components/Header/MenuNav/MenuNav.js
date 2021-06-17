@@ -8,8 +8,45 @@ import useOnClickOutside from '../../../hooks/useOnClickOutside';
 const MenuNav = () => {
   const modalRef = useRef();
   const [isModalOpen, setModalOpen] = useState(false);
+  const [dropDown, setDropDown] = useState('');
 
   useOnClickOutside(modalRef, () => setModalOpen(false));
+
+  const wholeList = (
+    <ul>
+      <li>Login/SignUp</li>
+      <li>Home</li>
+      <li>About</li>
+      <li>Trade</li>
+      <li>Investment</li>
+      <li>Tourism</li>
+      <li onClick={() => setDropDown('region')}>Regional Cluster</li>
+      <li onClick={() => setDropDown('news')}>News & Publications</li>
+      <li>FAQs</li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  );
+
+  const regionList = (
+    <ul>
+      <li onClick={() => setDropDown('')}>Click me !!!</li>
+      <li>Link 1</li>
+      <li>Link 2</li>
+      <li>Link 3</li>
+    </ul>
+  );
+
+  const newsList = (
+    <ul>
+      <li onClick={() => setDropDown('')}>Click me !!!  </li>
+      <li>Link 4</li>
+      <li>Link 5</li>
+      <li>Link 6</li>
+    </ul>
+  );
 
   return (
     <div
@@ -33,21 +70,11 @@ const MenuNav = () => {
                 <img src={languageNavMenu} alt='world' />
                 US/EN
               </p>
-              <ul>
-                <li>Login/SignUp</li>
-                <li>Home</li>
-                <li>About</li>
-                <li>Trade</li>
-                <li>Investment</li>
-                <li>Tourism</li>
-                <li>Regional Cluster</li>
-                <li>News & Publications</li>
-                <li>FAQs</li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
+              {!dropDown
+                ? wholeList
+                : dropDown === 'region'
+                ? regionList
+                : newsList}
             </div>
           </div>
           <div className={classes.backdrop}></div>

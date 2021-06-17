@@ -1,4 +1,5 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef, useState, useEffect, Fragment } from 'react';
+import useWindowSize from '../../../hooks/useWindowSize';
 
 //////
 import dummiesProduct from '../../../dummies-product.json';
@@ -39,6 +40,30 @@ const ProductItems = () => {
   //     console.log(ulRef.current.scrollLeft);
   //   }, 500);
   // }, []);
+
+  const size = useWindowSize();
+
+  const mobileWidth = 688;
+
+
+  const wholeListMap = products.map((product) => (
+    <li key={product.id} className={classes.productItems}>
+      <img
+        className={classes.img1}
+        src={product.img}
+        alt={'Product - ' + product.id}
+      />
+      <h2>{product.title}</h2>
+      <p className={classes.p1}>{product.type}</p>
+
+      <img
+        className={classes.img2}
+        src={product.regionImg}
+        alt={product.title + ' - Img'}
+      />
+    </li>
+  ));
+
   useEffect(() => {
     setProducts(dummiesProduct.data);
   }, []);
@@ -92,10 +117,6 @@ const ProductItems = () => {
     }
   }, [products]);
 
-  console.log(products);
-  console.log(firstList);
-  console.log(secondList);
-
   let productList = [];
   for (let i = 0; i < firstList.length; i++) {
     productList.push(
@@ -108,20 +129,24 @@ const ProductItems = () => {
   }
 
   return (
-    <>
-      <Swiper
-        cssMode={true}
-        navigation={true}
-        pagination={true}
-        mousewheel={true}
-        keyboard={true}
-        slidesPerView={3}
-        spaceBetween={-120}
-        className={'mySwiper'}
-      >
-        {productList}
-      </Swiper>
-    </>
+    <Fragment>
+      {size.width < mobileWidth ? (
+        wholeListMap
+      ) : (
+        <Swiper
+          cssMode={true}
+          navigation={true}
+          pagination={true}
+          mousewheel={true}
+          keyboard={true}
+          slidesPerView={3}
+          spaceBetween={-120}
+          className={'mySwiper'}
+        >
+          {productList}
+        </Swiper>
+      )}
+    </Fragment>
   );
 };
 

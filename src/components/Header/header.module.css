@@ -1,8 +1,8 @@
 .header {
   z-index: 2147483644;
   position: fixed;
-  top: 0;
-  width: 100%;
+  /* top: 0; */
+  width: 1440px;
   height: 100px;
   background-color: white;
   color: white;
@@ -53,10 +53,10 @@
   color: #0a5379;
 }
 
-.header .nav .active {
-  border-bottom: 2px solid #d91023;
+/* .header .nav .active {
+  border: 2px solid #d91023;
   color: #0a5379;
-}
+} */
 
 .header .nav-text-vector {
   width: 120px;
@@ -126,7 +126,7 @@
 /* Nav Menu */
 
 /* for Smartphone Keep Improving */
-@media only screen and (max-width: 1281px) {
+@media only screen and (max-width: 1305px) {
   .nav {
     display: none;
   }
