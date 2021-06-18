@@ -1,7 +1,7 @@
 import React, { useState, useRef, Fragment } from 'react';
 import classes from './MenuNav.module.css';
-import MenuNavIcon from '../../../assets/img/menu-nav-icon.svg';
-import languageNavMenu from '../../../assets/img/lang-nav-menu-icon.png';
+import MenuNavIcon from '../assets/img/menu-nav-icon.svg';
+import languageNavMenu from '../assets/img/nav-vector.png';
 
 import useOnClickOutside from '../../../hooks/useOnClickOutside';
 

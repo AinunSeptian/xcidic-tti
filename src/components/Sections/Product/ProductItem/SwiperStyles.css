@@ -41,11 +41,11 @@
 }
 
 .swiper-button-next {
-  background-image: url('../../../assets/img/next-btn.svg') !important;
+  background-image: url('../assets/img/next-btn.svg') !important;
 }
 
 .swiper-button-prev {
-  background-image: url('../../../assets/img/prev-btn.svg') !important;
+  background-image: url('../assets/img/prev-btn.svg') !important;
 }
 
 .swiper-button-next:after,
@@ -59,8 +59,8 @@
 }
 
 .swiper-pagination-bullet-active {
-  background: #0A5379;
-  width:24px;
+  background: #0a5379;
+  width: 24px;
   border-radius: 10px;
 }
 

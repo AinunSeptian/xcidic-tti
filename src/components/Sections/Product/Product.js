@@ -1,10 +1,10 @@
-import ProductItems from './ProductItems';
+import ProductItems from './ProductItem/ProductItem';
 import classes from './Product.module.css';
 
 import useWindowSize from '../../../hooks/useWindowSize';
 import { useEffect, useState } from 'react';
 
-import verticalTimeline from '../../../assets/img/vertical-timeline.svg';
+import verticalTimeline from './assets/img/vertical-timeline.svg';
 
 const CardProduct = () => {
   const size = useWindowSize();

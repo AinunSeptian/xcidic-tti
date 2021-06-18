@@ -1,9 +1,9 @@
 import React, { useRef, useState, useEffect, Fragment } from 'react';
-import useWindowSize from '../../../hooks/useWindowSize';
+import useWindowSize from '../../../../hooks/useWindowSize';
 
 //////
-import dummiesProduct from '../../../dummies-product.json';
-import classes from './ProductItems.module.css';
+import dummiesProduct from '../../../../dummies-product.json';
+import classes from './ProductItem.module.css';
 /////
 
 // Import Swiper React components
@@ -14,7 +14,7 @@ import 'swiper/swiper.min.css';
 import 'swiper/components/navigation/navigation.min.css';
 import 'swiper/components/pagination/pagination.min.css';
 
-import './styles.css';
+import './SwiperStyles.css';
 
 // import Swiper core and required modules
 import SwiperCore, {

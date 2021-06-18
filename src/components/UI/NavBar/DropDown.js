@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import classes from './DropDown.module.css';
-import arrowDown from '../../../assets/img/nav-vector-1.png';
+import arrowDown from '../../Header/assets/img/dropdown-nav.png';
 export default function ModalNav(props) {
   return (
     <div className={classes.dropdown}>
